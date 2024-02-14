@@ -6,7 +6,7 @@ It has the following features:
 * Enter an array of life periods. Each period has a start and end date, title + the custom color
 * Enter an array of milestones. Each milestone has a date, title, description and an optional image. Milestones are clickable circles that open a pop-up window
 
-## Custom week adjustment.
+## Week adjustment
 Each year contains exactly 52 weeks. This prevents the date-drift, especially in the later periods.
 Without this adjustment dates tend to shift because of rounding errors.
 
