@@ -1,0 +1,29 @@
+<div id="life-calendar" style="height: auto;"></div>
+<script>
+// Call the function with your desired DOB and life expectancy
+const data = {  
+  dob: '1988-01-01',  
+  lifeExpectancy: 76,  
+  ranges: [  
+    {start: '1990-09-01', end: '1993-12-31', title: 'Junior School', color: 'aqua'},  
+    {start: '1994-01-01', end: '1996-09-01', title: 'High School', color: 'brown'},  
+    {start: '1996-09-01', end: '2000-09-01', title: 'College', color: 'lightgreen'},  
+    {start: '2000-09-01', end: '2001-05-14', title: 'Internship', color: 'red'},  
+    {start: '2001-05-14', end: '2010-11-20', title: 'My First Job', color: 'green'},  
+    {start: '2010-11-20', end: '2014-05-17', title: 'My Second Job', color: 'lightblue'},  
+    {start: '2014-05-17', title: 'My Current Job', color: 'orange'} ,
+    {start: '2028-01-01', end: '2028-12-31', title: 'Junior School', color: 'aqua'},
+    {start: '2038-01-01', end: '2038-12-31', title: 'Junior School', color: 'aqua'},
+    {start: '2048-01-01', end: '2048-12-31', title: 'Junior School', color: 'aqua'},
+    {start: '2058-01-01', end: '2058-12-31', title: 'Junior School', color: 'aqua'}
+  ],  
+  milestones: [  
+    {date: '2003-10-08', title: 'Published first book.', desc: 'Some description 1', img: 'https://<IMAGE URL>'},  
+    {date: '2013-11-15', title: 'Published second book.', desc: 'Some description 2'},  
+    {date: '2013-01-01', title: 'My Birthday!', desc: 'Some description 3', img: 'https://<IMAGE URL>'},
+    {date: '2050-01-01', title: 'My Birthday!', desc: 'Some description 3'}
+  ]  
+};
+
+document.getElementById('life-calendar').appendChild(drawLifeMatrix(data));
+</script>
